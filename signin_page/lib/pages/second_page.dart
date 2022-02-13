@@ -16,6 +16,14 @@ class _SecondPage extends State<SecondPage> {
       backgroundColor: whitecolor,
       body: Stack(
         children: [
+          Positioned(
+            child: Image.asset(
+              "assets/images/background.png",
+            ),
+            top: 0,
+            left: 0,
+            right: 0,
+          ),
           Container(
             height: 150,
             width: double.infinity,
@@ -69,22 +77,35 @@ class _SecondPage extends State<SecondPage> {
                       )),
                 ],
               ),
+              SizedBox(
+                height: 50,
+              ),
               SingleChildScrollView(
-            physics: const AlwaysScrollableScrollPhysics(),
-            scrollDirection: Axis.vertical,
+                physics: const AlwaysScrollableScrollPhysics(),
+                scrollDirection: Axis.vertical,
                 child: Column(
                   children: [
                     Padding(
-                      padding:
-                          const EdgeInsets.only(left: 13, right: 13, bottom: 13),
+                      padding: const EdgeInsets.only(
+                          left: 13, right: 13, bottom: 13),
                       child: Container(
                         child: Column(
                           children: [
                             Padding(
                               padding: const EdgeInsets.all(10.0),
-                              child: Text("Sağlık durumum:",style: TextStyle(color: whitecolor,fontSize: 17,fontFamily: "Poppins Regular"),),
+                              child: Text(
+                                "Sağlık durumum:",
+                                style: TextStyle(
+                                    color: whitecolor,
+                                    fontSize: 17,
+                                    fontFamily: "Poppins Regular"),
+                              ),
                             ),
-                            Icon(Icons.expand_more,size: 25,color: whitecolor,)
+                            Icon(
+                              Icons.expand_more,
+                              size: 25,
+                              color: whitecolor,
+                            )
                           ],
                         ),
                         width: double.infinity,
@@ -96,8 +117,8 @@ class _SecondPage extends State<SecondPage> {
                       ),
                     ),
                     Padding(
-                      padding:
-                          const EdgeInsets.only(left: 13, right: 13, bottom: 13),
+                      padding: const EdgeInsets.only(
+                          left: 13, right: 13, bottom: 13),
                       child: Container(
                         width: double.infinity,
                         height: 200,
