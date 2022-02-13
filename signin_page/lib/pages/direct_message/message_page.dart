@@ -107,7 +107,7 @@ class _MessagePageState extends State<MessagePage> {
               child: Text(
                 "${listOfUser[index].lastNumberOfMessage}",
                 style: TextStyle(
-                    color: Colors.white,
+                    color: whitecolor,
                     fontSize: 12,
                     fontFamily: "Poppins Regular"),
               ),
@@ -126,7 +126,7 @@ class _MessagePageState extends State<MessagePage> {
   AppBar buildAppBar() {
     return AppBar(
       centerTitle: false,
-      backgroundColor: blackcolor,
+      backgroundColor: purplecolor,
       title: const Text(
         "Mesajlar",
         textAlign: TextAlign.center,

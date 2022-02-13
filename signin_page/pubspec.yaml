@@ -84,6 +84,8 @@ flutter:
     - assets/profiles/coach.jpg
     - assets/images/girl.png
     - assets/images/harita.png
+    - assets/images/background.png
+    - assets/images/doktorum.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
 

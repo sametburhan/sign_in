@@ -12,6 +12,7 @@ class FirstPage extends StatefulWidget {
 
 class _FirstPage extends State<FirstPage> {
   Widget build(BuildContext context) {
+    var _screesize = MediaQuery.of(context).size;
     return Scaffold(
       extendBody: true,
       backgroundColor: purplecolor,
@@ -80,7 +81,7 @@ class _FirstPage extends State<FirstPage> {
                 ),
               ),
               SizedBox(
-                height: 5,
+                height: 10,
               ),
               Container(
                 padding: EdgeInsets.only(left: 20),
@@ -114,20 +115,151 @@ class _FirstPage extends State<FirstPage> {
                 height: 50,
               ),
               Flexible(
-                  child: Container(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                child: Container(
+                  child: Column(
+                    children: [
+                      SizedBox(
+                        height: 15,
+                      ),
+                      SingleChildScrollView(
+                        physics: const AlwaysScrollableScrollPhysics(),
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        blurRadius: 10,
+                                        spreadRadius: 5,
+                                      ),
+                                    ],
+                                    color: whitecolor,
+                                    border: Border.all(
+                                        color: purplecolor, width: 2),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(80))),
+                                height: 45,
+                                width: 140,
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Doktorum",
+                                      style: TextStyle(
+                                          color: purplecolor,
+                                          fontSize: 15,
+                                          fontFamily: "Poppins Regular"),
+                                    )),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        blurRadius: 10,
+                                        spreadRadius: 5,
+                                      ),
+                                    ],
+                                    color: purplecolor,
+                                    border: Border.all(
+                                        color: purplecolor, width: 2),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(80))),
+                                height: 45,
+                                width: 140,
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Diyetisyenim",
+                                      style: TextStyle(
+                                          color: whitecolor,
+                                          fontSize: 15,
+                                          fontFamily: "Poppins Regular"),
+                                    )),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        blurRadius: 10,
+                                        spreadRadius: 5,
+                                      ),
+                                    ],
+                                    color: purplecolor,
+                                    border: Border.all(
+                                        color: purplecolor, width: 2),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(80))),
+                                height: 45,
+                                width: 140,
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Spor Koçum",
+                                      style: TextStyle(
+                                          color: whitecolor,
+                                          fontSize: 15,
+                                          fontFamily: "Poppins Regular"),
+                                    )),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      _Content(),
+                    ],
+                  ),
+                  height: double.infinity,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                      color: whitecolor,
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(15),
+                          topRight: Radius.circular(15))),
                 ),
-                height: double.infinity,
-                width: double.infinity,
-                decoration: BoxDecoration(
-                    color: whitecolor,
-                    borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(15),
-                        topRight: Radius.circular(15))),
-              )),
+              ),
             ],
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _Content() {
+    return Padding(
+      padding: EdgeInsets.all(5),
+      child: Column(
+        children: [
+          Column(
+            children: [
+              Image.asset(
+                "assets/images/doktorum.png",
+                scale: 3.7,
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 8.0, right: 8, bottom: 8),
+                child: Container(
+                  width: double.infinity,
+                  height: 80,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.all(Radius.circular(15)),
+                    color: softpurple,
+                  ),
+                ),
+              ),
+            ],
+          )
         ],
       ),
     );

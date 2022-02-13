@@ -14,7 +14,7 @@ class ChatPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: blackcolor,
+        backgroundColor: purplecolor,
         centerTitle: false,
         title: buildAppBarText(selectedUser),
         actions: [
