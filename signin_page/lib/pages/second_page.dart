@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:signin_page/constants/constant_color.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import 'package:signin_page/pages/first_page.dart';
 
 class SecondPage extends StatefulWidget {
   const SecondPage();

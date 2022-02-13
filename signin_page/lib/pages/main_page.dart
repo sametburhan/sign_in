@@ -1,11 +1,10 @@
-import 'dart:ffi';
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:signin_page/constants/constant_color.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
 import 'package:signin_page/pages/first_page.dart';
 import 'package:signin_page/pages/second_page.dart';
 import 'package:dot_navigation_bar/dot_navigation_bar.dart';
+import 'package:signin_page/pages/map_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage();
@@ -72,7 +71,7 @@ class _MainPageState extends State<MainPage> {
     if (_currentTab == 0) {
       return FirstPage();
     } else if (_currentTab == 1) {
-      return SecondPage();
+      return MapPage();
     } else if (_currentTab == 2) {
       return SecondPage();
     }

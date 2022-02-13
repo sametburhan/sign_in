@@ -1,8 +1,7 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:signin_page/constants/constant_color.dart';
-import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
-import 'package:signin_page/pages/first_page.dart';
+import 'package:signin_page/pages/direct_message/message_page.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage();
@@ -38,12 +37,17 @@ class _FirstPage extends State<FirstPage> {
                       maxRadius: 20,
                     ),
                     IconButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MessagePage()));
+                        },
                         icon: Icon(
                           Icons.message_sharp,
                           color: whitecolor,
                           size: 25,
-                        ))
+                        )),
                   ],
                 ),
               ),
@@ -111,7 +115,9 @@ class _FirstPage extends State<FirstPage> {
               ),
               Flexible(
                   child: Container(
-                child: null,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                ),
                 height: double.infinity,
                 width: double.infinity,
                 decoration: BoxDecoration(
