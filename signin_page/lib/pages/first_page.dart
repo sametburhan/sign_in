@@ -185,6 +185,35 @@ class _FirstPage extends State<FirstPage> {
                                     )),
                               ),
                             ),
+                             Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                    boxShadow: [
+                                      BoxShadow(
+                                        color: Colors.white,
+                                        blurRadius: 10,
+                                        spreadRadius: 5,
+                                      ),
+                                    ],
+                                    color: purplecolor,
+                                    border: Border.all(
+                                        color: purplecolor, width: 2),
+                                    borderRadius:
+                                        BorderRadius.all(Radius.circular(80))),
+                                height: 45,
+                                width: 140,
+                                child: TextButton(
+                                    onPressed: () {},
+                                    child: Text(
+                                      "Psikoloğum",
+                                      style: TextStyle(
+                                          color: whitecolor,
+                                          fontSize: 15,
+                                          fontFamily: "Poppins Regular"),
+                                    )),
+                              ),
+                            ),
                             Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Container(

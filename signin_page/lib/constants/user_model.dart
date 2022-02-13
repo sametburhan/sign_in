@@ -16,4 +16,6 @@ var listOfUser = [
       false),
   MyUser("Spor Koçum", "Yarın yapacağınız antrenm...", "coach.jpg", "19:25", 2,
       false),
+      MyUser("Psikoloğum", "Akşam 6'da görüntülü...", "psikolog.jpg", "17:25", 2,
+      true),
 ];
