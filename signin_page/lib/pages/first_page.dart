@@ -75,6 +75,9 @@ class _FirstPage extends State<FirstPage> {
                                 fontFamily: "Poppins Light",
                                 fontSize: 15),
                             border: InputBorder.none),
+                        style: TextStyle(
+                          color: whitecolor,
+                        ),
                       ),
                     ),
                   ),
@@ -185,7 +188,7 @@ class _FirstPage extends State<FirstPage> {
                                     )),
                               ),
                             ),
-                             Padding(
+                            Padding(
                               padding: const EdgeInsets.all(8.0),
                               child: Container(
                                 decoration: BoxDecoration(
